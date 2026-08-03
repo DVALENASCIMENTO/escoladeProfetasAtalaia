@@ -1,0 +1,459 @@
+/* ===========================
+   ESCOLA DE PROFETAS ATALAIA
+   style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --preto:#111111;
+    --preto2:#1c1c1c;
+    --preto3:#2b2b2b;
+
+    --dourado:#d4af37;
+    --dourado2:#f5d76e;
+
+    --branco:#ffffff;
+    --cinza:#d8d8d8;
+
+}
+
+body{
+
+    background:#0d0d0d;
+
+    color:var(--branco);
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    line-height:1.6;
+
+}
+
+/*==========================
+HEADER
+==========================*/
+
+.hero{
+
+    width:100%;
+
+    height:320px;
+
+    background:url("../img/banner.jpg") center center/cover;
+
+    position:relative;
+
+}
+
+.overlay{
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.70);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.overlay h1{
+
+    color:var(--dourado);
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+
+}
+
+.overlay h2{
+
+    color:#f2f2f2;
+
+    max-width:900px;
+
+    font-size:1.2rem;
+
+    font-weight:normal;
+
+}
+
+/*==========================
+CONTAINER
+==========================*/
+
+.container{
+
+    width:95%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:40px 0;
+
+}
+
+/*==========================
+CURSO
+==========================*/
+
+.course{
+
+    background:var(--preto2);
+
+    border:1px solid #333;
+
+    border-radius:12px;
+
+    margin-bottom:35px;
+
+    overflow:hidden;
+
+    box-shadow:0 0 20px rgba(0,0,0,.35);
+
+}
+
+.course-header{
+
+    padding:25px;
+
+    background:#191919;
+
+    border-bottom:1px solid #2e2e2e;
+
+}
+
+.course-header h2{
+
+    color:var(--dourado);
+
+    margin-bottom:10px;
+
+    font-size:1.8rem;
+
+}
+
+.course-header i{
+
+    margin-right:8px;
+
+}
+
+.course-header p{
+
+    color:#cfcfcf;
+
+}
+
+/*==========================
+ACCORDION
+==========================*/
+
+.accordion{
+
+    width:100%;
+
+    background:#232323;
+
+    color:#fff;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    padding:18px 25px;
+
+    font-size:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    transition:.3s;
+
+    border-top:1px solid #343434;
+
+}
+
+.accordion:hover{
+
+    background:#2f2f2f;
+
+}
+
+.accordion.active{
+
+    background:var(--dourado);
+
+    color:#111;
+
+    font-weight:bold;
+
+}
+
+.accordion i{
+
+    transition:.3s;
+
+}
+
+.accordion.active i{
+
+    transform:rotate(180deg);
+
+}
+
+/*==========================
+PANEL
+==========================*/
+
+.panel{
+
+    display:none;
+
+    background:#181818;
+
+    padding:30px;
+
+    animation:fade .3s ease;
+
+}
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.panel img{
+
+    width:100%;
+
+    max-width:500px;
+
+    display:block;
+
+    margin:0 auto 25px;
+
+    border-radius:10px;
+
+    border:3px solid var(--dourado);
+
+}
+
+.panel h3{
+
+    color:var(--dourado);
+
+    font-size:1.8rem;
+
+    margin-bottom:8px;
+
+}
+
+.panel h4{
+
+    color:#e9e9e9;
+
+    margin-bottom:20px;
+
+    font-weight:normal;
+
+}
+
+.panel p{
+
+    color:#d8d8d8;
+
+    margin-bottom:25px;
+
+}
+
+/*==========================
+AUDIO
+==========================*/
+
+audio{
+
+    width:100%;
+
+    margin-bottom:25px;
+
+}
+
+/*==========================
+BOTÃO PDF
+==========================*/
+
+.pdf{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:var(--dourado);
+
+    color:#111;
+
+    text-decoration:none;
+
+    padding:14px 22px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.pdf:hover{
+
+    background:var(--dourado2);
+
+    transform:translateY(-2px);
+
+}
+
+.pdf i{
+
+    font-size:22px;
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+
+    background:#000;
+
+    border-top:2px solid var(--dourado);
+
+    text-align:center;
+
+    padding:30px 15px;
+
+    color:#aaa;
+
+}
+
+/*==========================
+RESPONSIVO
+==========================*/
+
+@media(max-width:900px){
+
+    .overlay h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .overlay h2{
+
+        font-size:1rem;
+
+    }
+
+    .course-header h2{
+
+        font-size:1.4rem;
+
+    }
+
+    .accordion{
+
+        font-size:16px;
+
+        padding:16px;
+
+    }
+
+    .panel{
+
+        padding:20px;
+
+    }
+
+    .panel h3{
+
+        font-size:1.5rem;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+
+        height:250px;
+
+    }
+
+    .overlay h1{
+
+        font-size:1.8rem;
+
+    }
+
+    .overlay h2{
+
+        font-size:.95rem;
+
+    }
+
+    .panel img{
+
+        max-width:100%;
+
+    }
+
+    .pdf{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
