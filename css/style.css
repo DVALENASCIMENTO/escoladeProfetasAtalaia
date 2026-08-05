@@ -457,3 +457,209 @@ RESPONSIVO
     }
 
 }
+
+
+
+/*==========================
+HERO
+==========================*/
+
+.logo{
+
+    width:110px;
+
+    height:110px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid var(--branco);
+
+    background:#fff;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+
+    margin-bottom:20px;
+
+}
+
+.overlay p{
+
+    max-width:720px;
+
+    color:#f2f2f2;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    margin:25px 0 35px;
+
+}
+
+.hero-botoes{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero-botoes a{
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.30s;
+
+}
+
+.btn-principal{
+
+    background:var(--dourado);
+
+    color:#111;
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    border:2px solid var(--dourado);
+
+}
+
+.btn-principal:hover{
+
+    background:var(--dourado2);
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secundario{
+
+    color:#fff;
+
+    border:2px solid rgba(255,255,255,.8);
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+}
+
+.btn-secundario:hover{
+
+    background:#fff;
+
+    color:#111;
+
+}
+
+.hero{
+
+    position:relative;
+
+    min-height:520px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+        url("../img/banner_escoladeProfetas.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+.overlay{
+
+    width:100%;
+
+    max-width:900px;
+
+    padding:40px 25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.hero{
+
+    min-height:430px;
+
+}
+
+.logo{
+
+    width:80px;
+
+    height:80px;
+
+    margin-bottom:15px;
+
+}
+
+.overlay h1{
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+.overlay h2{
+
+    font-size:1rem;
+
+    margin-bottom:15px;
+
+}
+
+.overlay p{
+
+    font-size:.92rem;
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+
+}
+
+.hero-botoes{
+
+    width:100%;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.hero-botoes a{
+
+    width:100%;
+
+    text-align:center;
+
+}
