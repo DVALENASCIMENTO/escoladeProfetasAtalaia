@@ -663,3 +663,103 @@ HERO
     text-align:center;
 
 }
+
+
+/* ==================================================
+   OUTROS SEMINÁRIOS
+   ================================================== */
+
+.outros-seminarios {
+    width: 100%;
+    max-width: 1100px;
+    margin: 50px auto 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Título da seção */
+
+.outros-seminarios h2 {
+    margin: 0 0 25px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Link do banner */
+
+.outros-seminarios > a {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+/* Banner */
+
+.outros-seminarios img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+
+.outros-seminarios > a:hover img {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+/* Nome do seminário */
+
+.outros-seminarios h3 {
+    margin: 20px 0 6px;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+/* Identificação abaixo do banner */
+
+.outros-seminarios p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+
+/* ==================================================
+   RESPONSIVO
+   ================================================== */
+
+@media (max-width: 768px) {
+
+    .outros-seminarios {
+        margin: 35px auto;
+        padding: 0 15px;
+    }
+
+    .outros-seminarios h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .outros-seminarios img {
+        border-radius: 8px;
+    }
+
+    .outros-seminarios h3 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+
+    .outros-seminarios p {
+        font-size: 0.95rem;
+    }
+}
